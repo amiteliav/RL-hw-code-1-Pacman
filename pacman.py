@@ -48,6 +48,7 @@ from util import manhattanDistance
 import util, layout
 import sys, types, time, random, os
 from qlearningAgents import PacmanQAgent
+
 ###################################################
 # YOUR INTERFACE TO THE PACMAN WORLD: A GameState #
 ###################################################
@@ -253,11 +254,13 @@ class GameState:
         """
         self.data.initialize(layout, numGhostAgents)
 
+
 ############################################################################
 #                     THE HIDDEN SECRETS OF PACMAN                         #
 #                                                                          #
 # You shouldn't need to look through the code in this section of the file. #
 ############################################################################
+
 
 SCARED_TIME = 40    # Moves ghosts are scared
 COLLISION_TOLERANCE = 0.7 # How close ghosts must be to Pacman to kill
@@ -454,9 +457,11 @@ class GhostRules:
         ghostState.configuration = ghostState.start
     placeGhost = staticmethod( placeGhost )
 
+
 #############################
 # FRAMEWORK TO START A GAME #
 #############################
+
 
 def default(str):
     return str + ' [Default: %default]'

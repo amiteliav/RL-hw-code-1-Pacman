@@ -20,6 +20,8 @@ from collections import defaultdict
 
 import random,util,math
 
+
+
 class QLearningAgent(ReinforcementAgent):
     """
       Q-Learning Agent
@@ -41,7 +43,9 @@ class QLearningAgent(ReinforcementAgent):
           which returns legal actions for a state
     """
     def __init__(self, **args):
-        "You can initialize Q-values here..."
+
+        "You can initialize Q-values here..."  # TODO:
+
         ReinforcementAgent.__init__(self, **args)
         self.Q = defaultdict(float)
         self.epsilon = float(args['epsilon'])
@@ -54,7 +58,8 @@ class QLearningAgent(ReinforcementAgent):
           Should return 0.0 if we have never seen a state
           or the Q node value otherwise
         """
-        "*** YOUR CODE HERE ***"
+
+        "*** YOUR CODE HERE ***"  # TODO:
 
     def computeValueFromQValues(self, state):
         """
@@ -63,7 +68,8 @@ class QLearningAgent(ReinforcementAgent):
           there are no legal actions, which is the case at the
           terminal state, you should return a value of 0.0.
         """
-        "*** YOUR CODE HERE ***"
+
+        "*** YOUR CODE HERE ***"  # TODO:
 
 
     def computeActionFromQValues(self, state):
@@ -72,7 +78,8 @@ class QLearningAgent(ReinforcementAgent):
           are no legal actions, which is the case at the terminal state,
           you should return None.
         """
-        "*** YOUR CODE HERE ***"
+
+        "*** YOUR CODE HERE ***" # TODO:
 
     def getAction(self, state):
         """
@@ -86,7 +93,7 @@ class QLearningAgent(ReinforcementAgent):
           HINT: To pick randomly from a list, use random.choice(list)
         """
         # Pick Action
-        "*** YOUR CODE HERE ***"
+        "*** YOUR CODE HERE ***" # TODO:
 
 
     def update(self, state, action, nextState, reward):
@@ -98,7 +105,9 @@ class QLearningAgent(ReinforcementAgent):
           NOTE: You should never call this function,
           it will be called on your behalf
         """
-        "*** YOUR CODE HERE ***"
+
+        "*** YOUR CODE HERE ***"  # TODO:
+
 
     def getPolicy(self, state):
         return self.computeActionFromQValues(state)
